@@ -141,6 +141,7 @@ async function run() {
       const registryUri = proxyEndpoint.replace(/^https?:\/\//, '');
 
       core.info(`Logging into registry ${registryUri}`);
+      core.info(`Logging into registry (debug) : ${proxyEndpoint}`);
 
       // output the registry URI if this action is doing a single registry login
       if (authTokenResponse.authorizationData.length === 1) {
